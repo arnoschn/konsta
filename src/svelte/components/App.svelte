@@ -11,6 +11,7 @@
   export let dark = true;
   export let touchRipple = true;
   export let safeAreas = true;
+  export let autoThemeDetection = false;
 
   let currentTheme = theme;
 
@@ -66,7 +67,7 @@
   theme={currentTheme}
   {dark}
   {touchRipple}
-  autoThemeDetection={false}
+  {autoThemeDetection}
 >
   <div class={classes} {...$$restProps}>
     <slot />
